@@ -1,0 +1,16 @@
+.projects {
+  padding: 80px 100px;
+  text-align: center;
+  background-color: #fff;
+
+  h2 {
+    font-size: 40px;
+  }
+
+  &__subtitle {
+    color: #1800ad;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    font-size: 18px;
+  }
+}
