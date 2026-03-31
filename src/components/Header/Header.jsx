@@ -36,12 +36,12 @@ export default function Header() {
           <ul className="nav-links">
             <li>
               <a href="#home" className={active === 'home' ? 'active' : ''}>
-                Accueil
+                <span>Accueil</span>
               </a>
             </li>
             <li>
               <a href="#about" className={active === 'about' ? 'active' : ''}>
-                À propos
+                <span>À propos</span>
               </a>
             </li>
             <li>
@@ -49,12 +49,12 @@ export default function Header() {
                 href="#timeline"
                 className={active === 'timeline' ? 'active' : ''}
               >
-                Parcours
+                <span>Parcours</span>
               </a>
             </li>
             <li>
               <a href="#skills" className={active === 'skills' ? 'active' : ''}>
-                Compétences
+                <span>Compétences</span>
               </a>
             </li>
             <li>
@@ -62,7 +62,7 @@ export default function Header() {
                 href="#projects"
                 className={active === 'projects' ? 'active' : ''}
               >
-                Projets
+                <span>Projets</span>
               </a>
             </li>
             <li>
@@ -70,7 +70,7 @@ export default function Header() {
                 href="#contact"
                 className={active === 'contact' ? 'active' : ''}
               >
-                Contact
+                <span>Contact</span>
               </a>
             </li>
           </ul>

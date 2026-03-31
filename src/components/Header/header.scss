@@ -54,7 +54,10 @@
         text-decoration: none;
         color: #545454;
         font-size: 16px;
-
+        display: inline-block;
+        min-width: max-content;
+        text-align: center;
+        width: 95px;
         transition: 0.3s ease;
 
         &::after {
@@ -67,7 +70,10 @@
           height: 2px;
 
           background: #000;
-          transition: width 0.3s ease;
+        }
+
+        span {
+          display: inline-block;
         }
 
         &:hover {
@@ -79,7 +85,6 @@
           width: 100%;
         }
 
-        // 🔥 ACTIVE LINK
         &.active {
           text-transform: uppercase;
           color: #000;
