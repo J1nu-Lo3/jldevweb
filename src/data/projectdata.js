@@ -1,5 +1,9 @@
 import cover1 from '../assets/ProDataCover/Kasa.cover/KHp1.avif';
 import preview1 from '../assets/ProDataCover/Kasa.cover/KHp1.avif';
+import preview2 from '../assets/ProDataCover/Kasa.cover/KHp2.avif';
+import preview3 from '../assets/ProDataCover/Kasa.cover/KAp1.avif';
+import preview4 from '../assets/ProDataCover/Kasa.cover/KEp1.avif';
+import preview5 from '../assets/ProDataCover/Kasa.cover/KFLp1.avif';
 import techlist1 from '../assets/ProDataCover/Kasa.cover/Ktechlist.avif';
 
 import reactLogo from '../assets/Logo.svg.Co/react.svg';
@@ -13,7 +17,7 @@ const projectsData = [
 
     images: {
       cover: cover1,
-      preview: preview1,
+      previews: [preview1, preview2, preview3, preview4, preview5],
     },
 
     description: {

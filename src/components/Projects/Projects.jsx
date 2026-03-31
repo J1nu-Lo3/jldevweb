@@ -6,6 +6,7 @@ import githubLogo from '../../assets/Footer.logo/github.png';
 
 export default function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   return (
     <section id="projects" className="projects">
@@ -39,7 +40,10 @@ export default function Projects() {
 
             <button
               className="project-card__btn"
-              onClick={() => setSelectedProject(project)}
+              onClick={() => {
+                setSelectedProject(project);
+                setCurrentIndex(0);
+              }}
             >
               <i className="project-card__icon">↗</i>
               Voir le projet en détail
@@ -52,10 +56,46 @@ export default function Projects() {
         <div className="modal" onClick={() => setSelectedProject(null)}>
           <div className="modal__content" onClick={(e) => e.stopPropagation()}>
             <div className="modal__image">
+              <button
+                className="modal__nav left"
+                onClick={() =>
+                  setCurrentIndex((prev) =>
+                    prev === 0
+                      ? selectedProject.images.previews.length - 1
+                      : prev - 1,
+                  )
+                }
+              >
+                <i className="fa-solid fa-chevron-left"></i>
+              </button>
+
               <img
-                src={selectedProject.images.preview}
+                src={selectedProject.images.previews[currentIndex]}
                 alt={selectedProject.title}
               />
+
+              <button
+                className="modal__nav right"
+                onClick={() =>
+                  setCurrentIndex((prev) =>
+                    prev === selectedProject.images.previews.length - 1
+                      ? 0
+                      : prev + 1,
+                  )
+                }
+              >
+                <i className="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+
+            <div className="modal__dots">
+              {selectedProject.images.previews.map((_, i) => (
+                <span
+                  key={i}
+                  className={i === currentIndex ? 'active' : ''}
+                  onClick={() => setCurrentIndex(i)}
+                />
+              ))}
             </div>
 
             <div className="modal__body">
