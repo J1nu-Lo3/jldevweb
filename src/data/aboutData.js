@@ -3,13 +3,13 @@ const aboutData = [
     title: 'Qui suis-je',
     icon: 'fa-user',
     content:
-      "Salut ! Je suis un développeur web junior passionné par la création d'expériences numériques modernes et accessibles. Après une reconversion dans le développement, je me suis formé aux technologies web les plus demandées.",
+      'Développeur web en reconversion, je conçois et réalise des interfaces fiables et maintenables. J’aborde chaque projet avec curiosité et rigueur. J’aime comprendre les besoins pour proposer des solutions claires, fiables et adaptées.',
   },
   {
     title: 'Pourquoi le web ?',
     icon: 'fa-magnifying-glass',
     content:
-      "Le web est un terrain de jeu infini : chaque projet est un nouveau défi créatif et technique. J'aime l'idée de construire des choses que tout le monde peut utiliser, partout dans le monde.",
+      "Le développement web me permet de construire des solutions concrètes, en combinant logique et création. J'apprécie le fait de partir d'une idée pour aboutir à un produit utilisable.",
   },
   {
     title: 'Mes motivations',

@@ -12,9 +12,9 @@ export default function Home() {
         <h1>John-Louis Cezar</h1>
         <h2>Développeur Web</h2>
         <p>
-          Passionné par le développement web, je crée des interfaces modernes et
-          intuitives. En constante évolution, je cherche à transformer mes idées
-          en expériences numériques mémorables.
+          Mon rôle est de transforme des idées et besoins en solutions concrètes
+          et fonctionnelles. J’accorde une attention particulière aux détails et
+          à la qualité du code pour créer des interfaces simples et efficaces.
         </p>
       </div>
 
