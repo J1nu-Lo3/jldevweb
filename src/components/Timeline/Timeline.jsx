@@ -4,17 +4,12 @@ import './timeline.scss';
 
 export default function Parcours() {
   const [visible, setVisible] = useState(false);
-  const [openIndex, setOpenIndex] = useState(null);
   const sectionRef = useRef();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.intersectionRatio > 0.3) {
-          setVisible(true);
-        } else {
-          setVisible(false);
-        }
+        setVisible(entry.intersectionRatio > 0.3);
       },
       { threshold: [0, 0.3] },
     );
@@ -23,10 +18,6 @@ export default function Parcours() {
 
     return () => observer.disconnect();
   }, []);
-
-  const toggle = (index) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
 
   return (
     <section id="timeline" className="parcours" ref={sectionRef}>
@@ -43,9 +34,7 @@ export default function Parcours() {
           >
             <div className="dot"></div>
 
-            <div
-              className={`timeline-card ${openIndex === index ? 'open' : ''}`}
-            >
+            <div className="timeline-card open">
               <span className="year">{item.year}</span>
 
               <h3>{item.title}</h3>
@@ -54,17 +43,7 @@ export default function Parcours() {
                 <p className="speciality">{item.speciality}</p>
               )}
 
-              {openIndex !== index && (
-                <div className="dots" onClick={() => toggle(index)}>
-                  ● ● ●
-                </div>
-              )}
-
-              {openIndex === index && (
-                <p className="content" onClick={() => toggle(index)}>
-                  {item.content}
-                </p>
-              )}
+              <p className="content">{item.content}</p>
             </div>
           </div>
         ))}
