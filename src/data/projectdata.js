@@ -17,7 +17,7 @@ const projectsData = [
 
     images: {
       cover: cover1,
-      previews: [preview1, preview2, preview3, preview4, preview5],
+      previews: [preview1, preview2, preview3],
     },
 
     description: {
@@ -32,6 +32,57 @@ const projectsData = [
       { name: 'React', icon: reactLogo },
       { name: 'Scss', icon: scssLogo },
       { name: 'Javascript', icon: javascriptLogo },
+    ],
+
+    links: {
+      github: 'https://github.com/J1nu-Lo3/Kasa-Project',
+    },
+  },
+  {
+    id: 2,
+    title: 'Test n°2',
+
+    images: {
+      cover: cover1,
+      previews: [preview4, preview5],
+    },
+
+    description: {
+      short: 'Application test test test',
+      full: 'Création du front-end d’une plateforme de location immobilière en React. Développement de composants réutilisables, gestion des routes avec React Router et intégration fidèle des maquettes Figma. Mise en place de fonctionnalités interactives (galerie, collapses) et exploitation de données JSON en l’absence de back-end.',
+    },
+
+    technologiesList: techlist1,
+
+    technologies: [
+      { name: 'React', icon: reactLogo },
+      { name: 'Scss', icon: scssLogo },
+      { name: 'Javascript', icon: javascriptLogo },
+    ],
+
+    links: {
+      github: 'https://github.com/J1nu-Lo3/Kasa-Project',
+    },
+  },
+  {
+    id: 3,
+    title: 'Test n°3',
+
+    images: {
+      cover: cover1,
+      previews: [preview1, preview2, preview5],
+    },
+
+    description: {
+      short: 'Application test test test',
+      full: 'Création du front-end d’une plateforme de location immobilière en React. Développement de composants réutilisables, gestion des routes avec React Router et intégration fidèle des maquettes Figma. Mise en place de fonctionnalités interactives (galerie, collapses) et exploitation de données JSON en l’absence de back-end.',
+    },
+
+    technologiesList: techlist1,
+
+    technologies: [
+      { name: 'React', icon: reactLogo },
+      { name: 'Scss', icon: scssLogo },
     ],
 
     links: {

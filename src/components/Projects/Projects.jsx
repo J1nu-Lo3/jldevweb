@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './projects.scss';
 import projectsData from '../../data/projectdata';
 
@@ -6,7 +6,23 @@ import githubLogo from '../../assets/Footer.logo/github.png';
 
 export default function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
-  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const [projectIndex, setProjectIndex] = useState(0);
+  const [modalIndex, setModalIndex] = useState(0);
+
+  const project = projectsData[projectIndex];
+
+  useEffect(() => {
+    if (selectedProject) return;
+
+    const interval = setInterval(() => {
+      setProjectIndex((prev) =>
+        prev === projectsData.length - 1 ? 0 : prev + 1,
+      );
+    }, 6000);
+
+    return () => clearInterval(interval);
+  }, [selectedProject]);
 
   return (
     <section id="projects" className="projects">
@@ -17,39 +33,47 @@ export default function Projects() {
       </p>
 
       <div className="projects__container">
-        {projectsData.map((project) => (
-          <div key={project.id} className="project-card">
-            <div className="project-card__cover">
-              <img src={project.images.cover} alt={project.title} />
-            </div>
-
-            <div className="project-card__content">
-              <div className="project-card__left">
-                <h3>{project.title}</h3>
-                <p>{project.description.short}</p>
-              </div>
-
-              <div className="project-card__right">
-                <img
-                  src={project.technologiesList}
-                  alt="Technologies"
-                  className="project-card__techlist"
-                />
-              </div>
-            </div>
-
-            <button
-              className="project-card__btn"
-              onClick={() => {
-                setSelectedProject(project);
-                setCurrentIndex(0);
-              }}
-            >
-              <i className="project-card__icon">↗</i>
-              Voir le projet en détail
-            </button>
+        <div className="project-card">
+          <div className="project-card__cover">
+            <img src={project.images.cover} alt={project.title} />
           </div>
-        ))}
+
+          <div className="project-card__content">
+            <div className="project-card__left">
+              <h3>{project.title}</h3>
+              <p>{project.description.short}</p>
+            </div>
+
+            <div className="project-card__right">
+              <img
+                src={project.technologiesList}
+                alt="Technologies"
+                className="project-card__techlist"
+              />
+            </div>
+          </div>
+
+          <button
+            className="project-card__btn"
+            onClick={() => {
+              setSelectedProject(project);
+              setModalIndex(0);
+            }}
+          >
+            <i className="project-card__icon">↗</i>
+            Voir le projet en détail
+          </button>
+        </div>
+
+        <div className="projects__nav-dots">
+          {projectsData.map((_, i) => (
+            <span
+              key={i}
+              className={i === projectIndex ? 'active' : ''}
+              onClick={() => setProjectIndex(i)}
+            />
+          ))}
+        </div>
       </div>
 
       {selectedProject && (
@@ -59,7 +83,7 @@ export default function Projects() {
               <button
                 className="modal__nav left"
                 onClick={() =>
-                  setCurrentIndex((prev) =>
+                  setModalIndex((prev) =>
                     prev === 0
                       ? selectedProject.images.previews.length - 1
                       : prev - 1,
@@ -70,14 +94,14 @@ export default function Projects() {
               </button>
 
               <img
-                src={selectedProject.images.previews[currentIndex]}
+                src={selectedProject.images.previews[modalIndex]}
                 alt={selectedProject.title}
               />
 
               <button
                 className="modal__nav right"
                 onClick={() =>
-                  setCurrentIndex((prev) =>
+                  setModalIndex((prev) =>
                     prev === selectedProject.images.previews.length - 1
                       ? 0
                       : prev + 1,
@@ -88,12 +112,12 @@ export default function Projects() {
               </button>
             </div>
 
-            <div className="modal__dots">
+            <div className="modal__nav-dots">
               {selectedProject.images.previews.map((_, i) => (
                 <span
                   key={i}
-                  className={i === currentIndex ? 'active' : ''}
-                  onClick={() => setCurrentIndex(i)}
+                  className={i === modalIndex ? 'active' : ''}
+                  onClick={() => setModalIndex(i)}
                 />
               ))}
             </div>
