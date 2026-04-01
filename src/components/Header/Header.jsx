@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './header.scss';
+import logo from '../../assets/logo.avif';
 
 export default function Header() {
   const [active, setActive] = useState('home');
@@ -28,7 +29,9 @@ export default function Header() {
   return (
     <header className="header">
       <div className="header-left">
-        <div className="logo" />
+        <a href="#home">
+          <img src={logo} alt="Logo" className="logo" />
+        </a>
       </div>
 
       <div className="header-center">
