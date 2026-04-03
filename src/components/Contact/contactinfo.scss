@@ -1,0 +1,40 @@
+.contact-info {
+  background: #fff;
+  padding: 30px 30px 10px;
+  border-radius: 25px;
+  width: 350px;
+  text-align: left;
+
+  margin-top: 60px;
+  border: 2px solid #d3d3d3;
+
+  h3 {
+    color: #1800ad;
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+
+  &:hover img {
+    transform: scale(1.12);
+  }
+
+  img {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 12px;
+    border: 2px solid #1800ad;
+  }
+
+  span {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
