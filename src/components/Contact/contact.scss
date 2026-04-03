@@ -1,14 +1,15 @@
 .contact {
   padding: 80px 100px;
-  background-color: #f4f4f4;
+  background-color: var(--bg-main-T);
   text-align: center;
 
   h2 {
     font-size: 40px;
+    color: var(--title-color);
   }
 
   &-subtitle {
-    color: #1800ad;
+    color: var(--primary);
     margin-top: 10px;
     margin-bottom: 60px;
     font-size: 18px;

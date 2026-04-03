@@ -7,3 +7,30 @@
 html {
   scroll-behavior: smooth;
 }
+
+:root {
+  /* header background color */
+  --header-bg: #e1efff;
+
+  /* text/border/card */
+  --text-color: #545454;
+  --title-color: #000;
+  --backg-card: #fff;
+  --tica-back-c: #f5f5f5;
+
+  /* grand line color*/
+  --long-line: #595757;
+  --after-effect-w: #fff;
+  --first-color-b: #5170ff;
+
+  /* primary color */
+  --primary: #1800ad;
+
+  /* background colors */
+  --bg-main-T: #f4f4f4;
+  --bg-main-U: #fff;
+
+  /* btn color */
+  --btn-bg: #1800ad;
+  --btn-text: #fff;
+}

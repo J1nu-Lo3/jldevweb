@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   height: 5px;
-  background: #595757;
+  background: var(--long-line);
   overflow: hidden;
   margin-bottom: 50px;
 
@@ -17,8 +17,8 @@
     background: linear-gradient(
       90deg,
       transparent 0%,
-      #fff 60%,
-      #5170ff 40%,
+      var(--after-effect-w) 60%,
+      var(--first-color-b) 40%,
       transparent 100%
     );
 

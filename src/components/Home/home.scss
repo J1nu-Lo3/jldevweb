@@ -4,7 +4,7 @@
   justify-content: space-between;
   padding: 80px 100px 40px;
   gap: 60px;
-  background-color: #f4f4f4;
+  background-color: var(--bg-main-T);
   flex-wrap: wrap;
 
   &-text {
@@ -13,13 +13,13 @@
 
     p {
       &:first-child {
-        color: #545454;
+        color: var(--text-color);
         margin-bottom: 10px;
         font-size: 22px;
       }
 
       &:last-child {
-        color: #545454;
+        color: var(--text-color);
         line-height: 1.6;
         font-size: 20px;
       }
@@ -27,13 +27,13 @@
 
     h1 {
       font-size: 48px;
-      color: #1800ad;
+      color: var(--primary);
       margin-bottom: 10px;
     }
 
     h2 {
       font-size: 28px;
-      color: #545454;
+      color: var(--text-color);
       margin-bottom: 20px;
     }
   }
@@ -62,14 +62,14 @@
     box-shadow 0.25s ease;
 
   &.primary {
-    background: #1800ad;
-    color: #fff;
+    background: var(--primary);
+    color: var(--backg-card);
     border: none;
   }
 
   &.outline {
-    border: 2px solid #1800ad;
-    color: #1800ad;
+    border: 2px solid var(--primary);
+    color: var(--primary);
     background: transparent;
   }
 

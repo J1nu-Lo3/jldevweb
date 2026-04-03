@@ -1,14 +1,15 @@
 .projects {
   padding: 80px 100px;
   text-align: center;
-  background-color: #fff;
+  background-color: var(--bg-main-U);
 
   h2 {
     font-size: 40px;
+    color: var(--title-color);
   }
 
   &__subtitle {
-    color: #1800ad;
+    color: var(--primary);
     margin-top: 10px;
     margin-bottom: 60px;
     font-size: 18px;
@@ -30,7 +31,7 @@
       width: 12px;
       height: 12px;
       border-radius: 50%;
-      background: #1800ad;
+      background: var(--primary);
       opacity: 0.4;
       cursor: pointer;
       transition: 0.3s ease;
@@ -43,7 +44,7 @@
       &.active {
         opacity: 1;
         transform: scale(1.4);
-        background: black;
+        background: var(--title-color);
       }
     }
   }
