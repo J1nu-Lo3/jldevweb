@@ -34,7 +34,7 @@ export default function SkillsSlider() {
       <div className="skills__track">
         {duplicated.map((skill, index) => (
           <div className="skills__item" key={index}>
-            <img src={skill.icon} alt={skill.name} />
+            <img src={skill.icon} alt="" />
             <span className="skills__label">{skill.name}</span>
           </div>
         ))}

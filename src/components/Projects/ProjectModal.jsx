@@ -13,6 +13,7 @@ export default function ProjectModal({
         <div className="modal__image">
           <button
             className="modal__nav left"
+            aria-label="Image précédente"
             onClick={() =>
               setModalIndex((prev) =>
                 prev === 0 ? project.images.previews.length - 1 : prev - 1,
@@ -22,10 +23,14 @@ export default function ProjectModal({
             <i className="fa-solid fa-chevron-left"></i>
           </button>
 
-          <img src={project.images.previews[modalIndex]} alt={project.title} />
+          <img
+            src={project.images.previews[modalIndex].src}
+            alt={project.images.previews[modalIndex].alt}
+          />
 
           <button
             className="modal__nav right"
+            aria-label="Image suivante"
             onClick={() =>
               setModalIndex((prev) =>
                 prev === project.images.previews.length - 1 ? 0 : prev + 1,
@@ -62,7 +67,7 @@ export default function ProjectModal({
               rel="noreferrer"
               className="modal__github"
             >
-              <img src={githubLogo} alt="github" />
+              <img src={githubLogo} alt="" />
               Dépôt Github
             </a>
           </div>

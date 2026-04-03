@@ -30,7 +30,7 @@ export default function Header() {
     <header className="header">
       <div className="header-left">
         <a href="#home">
-          <img src={logo} alt="Logo" className="logo" />
+          <img src={logo} alt="Logo site jldevweb" className="logo" />
         </a>
       </div>
 
@@ -81,7 +81,7 @@ export default function Header() {
       </div>
 
       <div className="header-right">
-        <button className="theme-btn">
+        <button className="theme-btn" aria-label="Changement de mode">
           <i className="fa-solid fa-moon"></i>
         </button>
       </div>

@@ -73,17 +73,14 @@
 
     .skills__label {
       position: absolute;
-      bottom: -30px;
-
-      font-size: 16px;
-      font-weight: 500;
-      color: #000;
-
-      opacity: 0;
-      transform: translateY(10px);
-
-      transition: all 0.25s ease;
-      pointer-events: none;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
     }
 
     &:hover {
@@ -97,6 +94,14 @@
           border-box;
     }
     &:hover .skills__label {
+      position: absolute;
+      bottom: -30px;
+      width: auto;
+      height: auto;
+      clip: auto;
+      margin: 0;
+      overflow: visible;
+
       opacity: 1;
       transform: translateY(0);
     }

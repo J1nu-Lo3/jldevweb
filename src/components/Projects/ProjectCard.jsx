@@ -4,7 +4,7 @@ export default function ProjectCard({ project, onClick }) {
   return (
     <div className="project-card">
       <div className="project-card__cover">
-        <img src={project.images.cover} alt={project.title} />
+        <img src={project.images.cover.src} alt={project.images.cover.alt} />
       </div>
 
       <div className="project-card__content">

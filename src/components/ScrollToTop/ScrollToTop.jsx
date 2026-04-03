@@ -14,6 +14,7 @@ export default function ScrollToTop() {
     <button
       className={`scrollTop ${visible ? 'show' : ''}`}
       onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+      aria-label="Remonter en haut de la page"
     >
       <i className="fa-solid fa-arrow-up"></i>
     </button>

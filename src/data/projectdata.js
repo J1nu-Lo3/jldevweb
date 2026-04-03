@@ -71,8 +71,20 @@ const projectsData = [
     title: 'Kasa - Location d’appartements',
 
     images: {
-      cover: cover1,
-      previews: [preview1, preview2, preview3, preview4, preview5],
+      cover: { src: cover1, alt: "Page d'accueil du site Kasa" },
+      previews: [
+        {
+          src: preview1,
+          alt: "Page d'accueil du site Kasa avec header et début galerie",
+        },
+        {
+          src: preview2,
+          alt: "Page d'accueil du site Kasa avec fin galerie et footer",
+        },
+        { src: preview3, alt: 'Page À propos du site Kasa' },
+        { src: preview4, alt: 'Page Erreur 404 du site Kasa' },
+        { src: preview5, alt: 'Fiche de logement du site Kasa' },
+      ],
     },
 
     description: {
@@ -98,15 +110,33 @@ const projectsData = [
     title: "Portfolio d’architecte d'intérieur - Application web dynamique",
 
     images: {
-      cover: cover2,
+      cover: { src: cover2, alt: "Page d'accueil du site Sophie Buel" },
       previews: [
-        preview10,
-        preview11,
-        preview12,
-        preview13,
-        preview14,
-        preview15,
-        preview16,
+        {
+          src: preview10,
+          alt: "Page d'accueil du site Sophie Buel avec header, partie à propos",
+        },
+        {
+          src: preview11,
+          alt: "Page d'accueil du site Sophie Buel avec galerie et filtre",
+        },
+        {
+          src: preview12,
+          alt: "Page d'accueil du site Sophie Buel avec partie contact",
+        },
+        { src: preview13, alt: 'Page de connexion du site Sophie Buel' },
+        {
+          src: preview14,
+          alt: "Page d'accueil version editor du site Sophie Buel",
+        },
+        {
+          src: preview15,
+          alt: "Page d'accueil version editor, vue sur modale supprimer du site Sophie Buel",
+        },
+        {
+          src: preview16,
+          alt: "Page d'accueil version editor, vue sur modale ajouter du site Sophie Buel",
+        },
       ],
     },
 
@@ -130,18 +160,36 @@ const projectsData = [
   },
   {
     id: 3,
-    title: 'API de notation de livres - Mon Vieux Grimoire',
+    title: 'Mon Vieux Grimoire - API de notation de livres',
 
     images: {
-      cover: cover3,
+      cover: { src: cover3, alt: "Page d'accueil du site Mon Vieux Grimoire" },
       previews: [
-        preview20,
-        preview21,
-        preview22,
-        preview23,
-        preview24,
-        preview25,
-        preview26,
+        {
+          src: preview20,
+          alt: "Page d'accueil du site Mon Vieux Grimoire avec header, btn ajouter livre et liste de livre",
+        },
+        {
+          src: preview21,
+          alt: "Page d'accueil du site Mon Vieux Grimoire avec footer et fin de liste de livre",
+        },
+        { src: preview22, alt: 'Page de connexion du site Mon Vieux Grimoire' },
+        {
+          src: preview23,
+          alt: 'Formulaire d’ajout de livre avec ajout Titre du livre et auteur.',
+        },
+        {
+          src: preview24,
+          alt: 'Formulaire d’ajout de livre avec upload d’image',
+        },
+        {
+          src: preview25,
+          alt: "Page de notation d'un livre avec btn modifier et supprimer",
+        },
+        {
+          src: preview26,
+          alt: "Page de notation d'un livre avec note du livre et les meilleurs livres notés",
+        },
       ],
     },
 
@@ -168,8 +216,11 @@ const projectsData = [
     title: 'Booki - Site de réservation de voyages',
 
     images: {
-      cover: cover4,
-      previews: [preview30, preview32],
+      cover: { src: cover4, alt: "Page d'accueil du site Booki" },
+      previews: [
+        { src: preview30, alt: "Page d'accueil du site Booki part.1" },
+        { src: preview32, alt: "Page d'accueil du site Booki part.2" },
+      ],
     },
 
     description: {
@@ -194,8 +245,23 @@ const projectsData = [
     title: 'Tokyo Vlog - Galerie immersive',
 
     images: {
-      cover: cover5,
-      previews: [preview40, preview41, preview42, preview43, preview44],
+      cover: { src: cover5, alt: "Page d'accueil du site Tokyo Vlog" },
+      previews: [
+        {
+          src: preview40,
+          alt: "Page d'accueil du site Tokyo Vlog avec slider",
+        },
+        {
+          src: preview41,
+          alt: "Page d'accueil du site Tokyo Vlog avec texte et footer",
+        },
+        {
+          src: preview42,
+          alt: 'Galerie photo immersive avec affichage en grille',
+        },
+        { src: preview43, alt: 'Affichage de la catégorie sélectionnée' },
+        { src: preview44, alt: 'Page à propos du site Tokyo Vlog' },
+      ],
     },
 
     description: {
@@ -221,8 +287,13 @@ const projectsData = [
     title: 'Application d’apprentissage des kanjis (N5)',
 
     images: {
-      cover: cover6,
-      previews: [preview34, preview35, preview36, preview37],
+      cover: { src: cover6, alt: "Page d'accueil du site Benkyo" },
+      previews: [
+        { src: preview34, alt: "Page d'accueil du site Benkyo" },
+        { src: preview35, alt: 'Affichage réponse correcte du site Benkyo' },
+        { src: preview36, alt: 'Affichage réponse fausse du site Benkyo' },
+        { src: preview37, alt: 'Modale de partage score du site Benkyo' },
+      ],
     },
 
     description: {
@@ -245,19 +316,43 @@ const projectsData = [
   },
   {
     id: 7,
-    title: 'Gunpla Showcase - Site vitrine personnel ',
+    title: 'Jinu Workshop - Site hobby personnel ',
 
     images: {
-      cover: cover7,
+      cover: { src: cover7, alt: "Page d'accueil du site Jinu Workshop" },
       previews: [
-        preview50,
-        preview51,
-        preview52,
-        preview53,
-        preview54,
-        preview55,
-        preview56,
-        preview57,
+        {
+          src: preview50,
+          alt: "Page d'accueil du site Jinu Workshop avec slider",
+        },
+        {
+          src: preview51,
+          alt: "Page d'accueil du site Jinu Workshop avec texte explicatif",
+        },
+        {
+          src: preview52,
+          alt: "Page d'accueil du site Jinu Workshop avec galerie d'images",
+        },
+        {
+          src: preview53,
+          alt: "Page d'accueil du site Jinu Workshop avec footer",
+        },
+        {
+          src: preview54,
+          alt: 'Page Story du site expliquant la raison de la création du site',
+        },
+        {
+          src: preview55,
+          alt: "Page Story du site expliquant l'entrée dans le hobby",
+        },
+        {
+          src: preview56,
+          alt: 'Page Contact du site Jinu Workshop avec bannière',
+        },
+        {
+          src: preview57,
+          alt: 'Page Contact du site Jinu Workshop avec mail et qrcode instagram',
+        },
       ],
     },
 
