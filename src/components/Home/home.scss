@@ -70,7 +70,7 @@
   &.outline {
     border: 2px solid var(--primary);
     color: var(--primary);
-    background: transparent;
+    background: var(--backg-card);
   }
 
   &:hover {

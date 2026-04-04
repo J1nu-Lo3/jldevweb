@@ -1,9 +1,32 @@
 import { useEffect, useState } from 'react';
 import './header.scss';
-import logo from '../../assets/logo.avif';
+import logoLight from '../../assets/LogoS.avif';
+import logoDark from '../../assets/LogoM.avif';
+import ThemeToggle from '../ThemeToggle/ThemeToggle';
 
 export default function Header() {
   const [active, setActive] = useState('home');
+  const [theme, setTheme] = useState('light');
+
+  useEffect(() => {
+    const currentTheme =
+      document.documentElement.getAttribute('data-theme') || 'light';
+
+    setTheme(currentTheme);
+
+    const observer = new MutationObserver(() => {
+      const newTheme =
+        document.documentElement.getAttribute('data-theme') || 'light';
+      setTheme(newTheme);
+    });
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['data-theme'],
+    });
+
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
     const sections = document.querySelectorAll('section');
@@ -30,7 +53,11 @@ export default function Header() {
     <header className="header">
       <div className="header-left">
         <a href="#home">
-          <img src={logo} alt="Logo site jldevweb" className="logo" />
+          <img
+            src={theme === 'dark' ? logoDark : logoLight}
+            alt="Logo site jldevweb"
+            className="logo"
+          />
         </a>
       </div>
 
@@ -81,9 +108,7 @@ export default function Header() {
       </div>
 
       <div className="header-right">
-        <button className="theme-btn" aria-label="Changement de mode">
-          <i className="fa-solid fa-moon"></i>
-        </button>
+        <ThemeToggle />
       </div>
     </header>
   );

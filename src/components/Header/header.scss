@@ -97,29 +97,3 @@
     }
   }
 }
-
-.theme-btn {
-  padding: 10px 15px;
-  border: 1px solid black;
-  border-radius: 8px;
-  background: white;
-  cursor: pointer;
-  width: 60px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease;
-
-  i {
-    font-size: 15px;
-  }
-
-  &:hover {
-    transform: scale(1.08);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  }
-}

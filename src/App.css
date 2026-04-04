@@ -34,3 +34,30 @@ html {
   --btn-bg: #1800ad;
   --btn-text: #fff;
 }
+
+[data-theme='dark'] {
+  /* header background color */
+  --header-bg: #a2acb8;
+
+  /* text/border/card */
+  --text-color: #f4f4f4;
+  --title-color: #fff;
+  --backg-card: #f4f4f4;
+  --tica-back-c: #f4f4f4;
+
+  /* grand line color*/
+  --long-line: #fff;
+  --after-effect-w: #595757;
+  --first-color-b: #1800ad;
+
+  /* primary color */
+  --primary: #5170ff;
+
+  /* background colors */
+  --bg-main-T: #202020;
+  --bg-main-U: #595757;
+
+  /* btn color */
+  --btn-bg: #5170ff;
+  --btn-text: #fff;
+}
