@@ -86,7 +86,7 @@ export default function SkillsSlider() {
           <div className="skills__item" key={index}>
             <img
               src={theme === 'dark' ? skill.iconDark : skill.iconLight}
-              alt={skill.name}
+              alt={`${skill.name} logo`}
             />
             <span className="skills__label">{skill.name}</span>
           </div>

@@ -6,6 +6,13 @@
   background: #fff;
   display: flex;
   flex-direction: column;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  }
 
   &__cover img {
     width: 100%;
@@ -24,12 +31,15 @@
     text-align: left;
 
     h3 {
-      font-size: 36px;
+      font-size: 28px;
       margin-bottom: 10px;
+      font-weight: 600;
     }
 
     p {
       color: #545454;
+      line-height: 1.5;
+      max-width: 500px;
     }
   }
 
@@ -53,7 +63,7 @@
     transition: 0.25s ease;
 
     &:hover {
-      transform: scale(1.05);
+      transform: translateY(-2px) scale(1.03);
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     }
   }
