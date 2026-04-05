@@ -63,14 +63,14 @@
 
   &.primary {
     background: var(--primary);
-    color: var(--backg-card);
+    color: var(--card-text-color);
     border: none;
   }
 
   &.outline {
     border: 2px solid var(--primary);
     color: var(--primary);
-    background: var(--backg-card);
+    background: var(--card-text-color);
   }
 
   &:hover {

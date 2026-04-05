@@ -75,6 +75,7 @@
     .skills__label {
       position: absolute;
       color: var(--title-color);
+      background: var(--skill-backg-color);
       width: 1px;
       height: 1px;
       padding: 0;
@@ -91,7 +92,7 @@
       border: 3px solid transparent;
 
       background:
-        linear-gradient(#fff, #fff) padding-box,
+        linear-gradient(#f8fafc, #f8fafc) padding-box,
         linear-gradient(45deg, red, orange, yellow, green, blue, purple)
           border-box;
     }
