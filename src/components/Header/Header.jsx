@@ -7,6 +7,7 @@ import ThemeToggle from '../ThemeToggle/ThemeToggle';
 export default function Header() {
   const [active, setActive] = useState('home');
   const [theme, setTheme] = useState('light');
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const currentTheme =
@@ -49,6 +50,10 @@ export default function Header() {
     return () => observer.disconnect();
   }, []);
 
+  useEffect(() => {
+    document.body.classList.toggle('menu-open', menuOpen);
+  }, [menuOpen]);
+
   return (
     <header className="header">
       <div className="header-left">
@@ -62,15 +67,23 @@ export default function Header() {
       </div>
 
       <div className="header-center">
-        <nav className="navbar">
+        <nav className={`navbar ${menuOpen ? 'open' : ''}`}>
           <ul className="nav-links">
             <li>
-              <a href="#home" className={active === 'home' ? 'active' : ''}>
+              <a
+                href="#home"
+                className={active === 'home' ? 'active' : ''}
+                onClick={() => setMenuOpen(false)}
+              >
                 <span>Accueil</span>
               </a>
             </li>
             <li>
-              <a href="#about" className={active === 'about' ? 'active' : ''}>
+              <a
+                href="#about"
+                className={active === 'about' ? 'active' : ''}
+                onClick={() => setMenuOpen(false)}
+              >
                 <span>À propos</span>
               </a>
             </li>
@@ -78,12 +91,17 @@ export default function Header() {
               <a
                 href="#timeline"
                 className={active === 'timeline' ? 'active' : ''}
+                onClick={() => setMenuOpen(false)}
               >
                 <span>Parcours</span>
               </a>
             </li>
             <li>
-              <a href="#skills" className={active === 'skills' ? 'active' : ''}>
+              <a
+                href="#skills"
+                className={active === 'skills' ? 'active' : ''}
+                onClick={() => setMenuOpen(false)}
+              >
                 <span>Compétences</span>
               </a>
             </li>
@@ -91,6 +109,7 @@ export default function Header() {
               <a
                 href="#projects"
                 className={active === 'projects' ? 'active' : ''}
+                onClick={() => setMenuOpen(false)}
               >
                 <span>Projets</span>
               </a>
@@ -99,6 +118,7 @@ export default function Header() {
               <a
                 href="#contact"
                 className={active === 'contact' ? 'active' : ''}
+                onClick={() => setMenuOpen(false)}
               >
                 <span>Contact</span>
               </a>
@@ -109,6 +129,14 @@ export default function Header() {
 
       <div className="header-right">
         <ThemeToggle />
+
+        <button
+          className="menu-toggle"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Menu"
+        >
+          <i className={`fa-solid ${menuOpen ? 'fa-xmark' : 'fa-bars'}`}></i>
+        </button>
       </div>
     </header>
   );
