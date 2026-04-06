@@ -49,3 +49,18 @@
     }
   }
 }
+
+@media screen and (max-width: 375px) {
+  .projects {
+    padding: 40px 20px 60px;
+
+    h2 {
+      font-size: 32px;
+    }
+
+    &__subtitle {
+      font-size: 16px;
+      margin-bottom: 40px;
+    }
+  }
+}

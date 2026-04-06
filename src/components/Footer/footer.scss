@@ -53,3 +53,33 @@
     }
   }
 }
+
+@media screen and (max-width: 375px) {
+  .footer {
+    padding: 30px 20px;
+    gap: 15px;
+
+    p {
+      font-size: 14px;
+    }
+
+    &-icons {
+      gap: 40px;
+
+      a {
+        width: 44px;
+        height: 44px;
+
+        &:hover {
+          transform: none;
+          opacity: 1;
+        }
+
+        img {
+          width: 45px;
+          height: 45px;
+        }
+      }
+    }
+  }
+}
