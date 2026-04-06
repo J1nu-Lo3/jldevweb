@@ -62,5 +62,31 @@
       font-size: 16px;
       margin-bottom: 40px;
     }
+
+    &__container {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &__nav-dots {
+      order: -1;
+      flex-direction: row;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 10px;
+
+      span {
+        width: 10px;
+        height: 10px;
+
+        &:hover {
+          transform: none;
+        }
+
+        &.active {
+          transform: scale(1.2);
+        }
+      }
+    }
   }
 }
