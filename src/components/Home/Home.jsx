@@ -26,6 +26,10 @@ export default function Home() {
         <a href="#contact" className="btn outline">
           <i className="fa-solid fa-envelope"></i>Me contacter
         </a>
+
+        <a href="#" className="btn secondary">
+          <i className="fa-solid fa-download"></i>Télécharger mon CV
+        </a>
       </div>
 
       <AnimatedLLine />

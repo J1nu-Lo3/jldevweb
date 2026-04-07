@@ -73,6 +73,11 @@
     background: var(--card-text-color);
   }
 
+  &.secondary {
+    background: var(--primary);
+    color: var(--card-text-color);
+  }
+
   &:hover {
     transform: translateY(-4px) scale(1.08);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);

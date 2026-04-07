@@ -45,6 +45,8 @@
 
   &__right img {
     width: 240px;
+    height: 100px;
+    object-fit: contain;
   }
 
   &__btn {
@@ -108,6 +110,8 @@
     &__right img {
       width: 100%;
       max-width: 260px;
+      height: 80px;
+      object-fit: contain;
     }
 
     &__btn {
