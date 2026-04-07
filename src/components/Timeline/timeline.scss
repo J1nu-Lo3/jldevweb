@@ -161,9 +161,11 @@
       padding-right: 10px;
       text-align: left;
 
-      .dot {
-        left: 11px;
+      &.left .dot,
+      &.right .dot {
+        left: 21.5px;
         right: auto;
+        transform: translateX(-50%);
       }
 
       .timeline-card {
