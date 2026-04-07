@@ -13,12 +13,14 @@ export default function App() {
   return (
     <>
       <Header />
-      <Home />
-      <About />
-      <Timeline />
-      <Skills />
-      <Projects />
-      <Contact />
+      <main>
+        <Home />
+        <About />
+        <Timeline />
+        <Skills />
+        <Projects />
+        <Contact />
+      </main>
       <Footer />
       <ScrollToTop />
     </>
