@@ -12,9 +12,10 @@ export default function Home() {
         <h1>John-Louis Cezar</h1>
         <h2>Développeur Web</h2>
         <p>
-          Mon rôle est de transforme des idées et besoins en solutions concrètes
-          et fonctionnelles. J’accorde une attention particulière aux détails et
-          à la qualité du code pour créer des interfaces simples et efficaces.
+          Mon rôle est de transformer des idées et besoins en solutions
+          concrètes et fonctionnelles. J’accorde une attention particulière aux
+          détails et à la qualité du code pour créer des interfaces simples et
+          efficaces.
         </p>
       </div>
 

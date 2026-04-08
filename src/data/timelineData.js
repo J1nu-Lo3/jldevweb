@@ -15,7 +15,7 @@ const timelineData = [
   },
   {
     year: '2025',
-    title: 'Apprentissage HTML, CSS et JavaScript: 2025',
+    title: 'Apprentissage HTML, CSS et JavaScript',
     speciality: null,
     content:
       'Maîtrise des fondamentaux du web : structure HTML, mise en page CSS et interactivité avec JavaScript.',

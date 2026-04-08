@@ -18,6 +18,7 @@ export default function ProjectCard({ project, onClick }) {
             src={project.technologiesList}
             alt="Technologies"
             className="project-card__techlist"
+            loading="lazy"
           />
         </div>
       </div>

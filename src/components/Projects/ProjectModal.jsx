@@ -26,6 +26,7 @@ export default function ProjectModal({
           <img
             src={project.images.previews[modalIndex].src}
             alt={project.images.previews[modalIndex].alt}
+            loading="lazy"
           />
 
           <button

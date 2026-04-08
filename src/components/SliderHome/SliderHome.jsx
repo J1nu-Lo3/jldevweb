@@ -24,6 +24,8 @@ export default function SliderHome() {
         src={images[currentIndex]}
         alt="slider"
         className="home-slider__img"
+        loading="eager"
+        fetchPriority="high"
       />
     </div>
   );
