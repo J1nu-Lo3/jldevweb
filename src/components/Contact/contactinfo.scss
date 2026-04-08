@@ -52,6 +52,42 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .contact-info {
+    width: 500px;
+    margin-top: 20px;
+
+    h3 {
+      font-size: 28px;
+      width: fit-content;
+      margin-bottom: 20px;
+    }
+  }
+
+  .contact-item {
+    gap: 20px;
+    margin-bottom: 30px;
+
+    &:hover img {
+      transform: none;
+      background: none;
+      border: 2px solid var(--primary);
+      box-shadow: none;
+    }
+
+    img {
+      width: 60px;
+      height: 60px;
+      padding: 10px;
+      border-radius: 20px;
+    }
+
+    span {
+      font-size: 20px;
+    }
+  }
+}
+
 @media screen and (max-width: 375px) {
   .contact-info {
     width: 100%;

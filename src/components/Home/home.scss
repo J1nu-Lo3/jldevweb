@@ -84,6 +84,50 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .home {
+    padding: 60px 20px 30px;
+    gap: 25px;
+  }
+
+  .home-slider {
+    width: 320px;
+    height: 320px;
+  }
+
+  .home-text {
+    max-width: 380px;
+    margin-top: 20px;
+
+    p:first-child {
+      font-size: 18px;
+    }
+
+    h1 {
+      font-size: 36px;
+    }
+
+    h2 {
+      font-size: 22px;
+    }
+
+    p:last-child {
+      font-size: 16px;
+    }
+  }
+
+  .home-buttons {
+    margin-top: 40px;
+    gap: 15px;
+  }
+
+  .btn {
+    width: 200px;
+    font-size: 16px;
+    padding: 14px 20px;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .home {
     flex-direction: column;
