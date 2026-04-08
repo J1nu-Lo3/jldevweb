@@ -28,8 +28,14 @@ export default function Home() {
           <i className="fa-solid fa-envelope"></i>Me contacter
         </a>
 
-        <a href="#" className="btn secondary">
-          <i className="fa-solid fa-download"></i>Télécharger mon CV
+        <a
+          href="/CV_John-Louis_Cezar.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn secondary"
+        >
+          <i className="fa-solid fa-download"></i>
+          Télécharger mon CV
         </a>
       </div>
 
