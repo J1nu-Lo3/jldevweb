@@ -131,7 +131,7 @@
   word-break: break-word;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 430px) {
   .parcours {
     padding: 60px 15px;
 
@@ -170,7 +170,7 @@
 
       .timeline-card {
         width: 100%;
-        max-width: 280px;
+        max-width: 100%;
         margin: 0;
         padding: 20px;
         border-radius: 25px;
