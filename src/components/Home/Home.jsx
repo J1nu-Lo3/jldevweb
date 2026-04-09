@@ -29,7 +29,7 @@ export default function Home() {
         </a>
 
         <a
-          href="/CV_John-Louis_Cezar.pdf"
+          href="/jldevweb/CV_John-Louis_Cezar.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="btn secondary"
