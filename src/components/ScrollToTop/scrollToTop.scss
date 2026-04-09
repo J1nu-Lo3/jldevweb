@@ -25,7 +25,8 @@
     transform 0.25s ease,
     box-shadow 0.25s ease;
 
-  i {
+  i,
+  svg {
     font-size: 20px;
     color: #fff;
   }
@@ -61,7 +62,8 @@
     right: 10%;
     transform: translateX(50%) translateY(20px) scale(0.8);
 
-    i {
+    i,
+    svg {
       font-size: 16px;
     }
 

@@ -1,16 +1,71 @@
-# React + Vite
+# Portfolio - John-Louis Cezar
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenue sur mon portfolio de développeur web
+Ce projet présente mes compétences, mes projets et mon approche du développement frontend.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## À propos du projet
 
-## React Compiler
+Ce portfolio a été conçu pour mettre en avant :
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- mes projets
+- mes compétences
+- mon parcours
+- un moyen de me contacter facilement
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies utilisées
+
+### Frontend
+
+- React
+- JavaScript (ES6+)
+- Sass (SCSS)
+
+### Outils & environnement
+
+- Vite
+- ESLint
+
+### Services externes
+
+- Formspree (gestion du formulaire de contact)
+
+---
+
+## Installation & lancement
+
+Clone le projet :
+git clone https://github.com/ton-username/jldevweb.git
+cd jldevweb
+
+Installe les dépendances :
+npm install
+
+Lance le serveur de développement :
+npm run dev
+
+Build du projet :
+npm run build
+
+Preview du build :
+npm run preview
+
+---
+
+## Fonctionnalités
+
+- Mode sombre / clair
+- Design responsive
+- Formulaire de contact fonctionnel
+- Performance optimisée avec Vite
+- Animations et composants interactifs
+
+---
+
+## Contact
+
+- Email : [cezarjohnlouis@gmail.com](mailto:cezarjohnlouis@gmail.com)
+- GitHub : https://github.com/J1nu-Lo3

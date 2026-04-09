@@ -35,7 +35,10 @@ export default function About() {
             style={{ transitionDelay: `${index * 0.2}s` }}
           >
             <div className="about__card-header">
-              <i className={`fa-solid ${item.icon}`}></i>
+              <i
+                className={`fa-solid ${item.icon}`}
+                style={{ color: item.color }}
+              ></i>
               <h3>{item.title}</h3>
             </div>
             <p className="about__card-text">{item.content}</p>
