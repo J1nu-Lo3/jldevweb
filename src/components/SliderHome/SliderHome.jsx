@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import './sliderHome.scss';
 
-import img1 from '../../assets/portrait/IMG_4509.jpg';
-import img2 from '../../assets/portrait/IMG_3917 copie.jpg';
-import img3 from '../../assets/portrait/IMG_4194.jpg';
-import img4 from '../../assets/portrait/IMG_4605 copie.jpg';
+import img1 from '../../assets/portrait/IMG2601.avif';
+import img2 from '../../assets/portrait/IMG2602.avif';
+import img3 from '../../assets/portrait/IMG2604.avif';
+import img4 from '../../assets/portrait/IMG2603.avif';
 
 export default function SliderHome() {
   const images = [img1, img2, img3, img4];
