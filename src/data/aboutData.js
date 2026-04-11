@@ -4,7 +4,7 @@ const aboutData = [
     icon: 'fa-user',
     color: 'orange',
     content:
-      'Développeur web en reconversion, je conçois et réalise des interfaces fiables et maintenables. J’aborde chaque projet avec curiosité et rigueur, en accordant une attention particulière à la qualité du code, à la lisibilité et à l’expérience utilisateur. J’aime prendre le temps de comprendre les besoins en détail afin de proposer des solutions claires, fiables et adaptées aux utilisateurs.',
+      'Développeur web débutant, je conçois et réalise des interfaces fiables et maintenables. J’aborde chaque projet avec curiosité et rigueur, en accordant une attention particulière à la qualité du code, à la lisibilité et à l’expérience utilisateur. J’aime prendre le temps de comprendre les besoins en détail afin de proposer des solutions claires, fiables et adaptées aux utilisateurs.',
   },
   {
     title: 'Pourquoi le web ?',
