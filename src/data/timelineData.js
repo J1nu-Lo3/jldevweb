@@ -25,14 +25,14 @@ const timelineData = [
     title: 'Premiers projets en React',
     speciality: null,
     content:
-      "Construction d'applications interactives avec React, découverte des composants, hooks et de l'écosystème moderne.",
+      "Construction d'une application interactive avec React, avec découverte des composants, hooks et de l'écosystème moderne.",
   },
   {
     year: '2026',
-    title: 'Portfolio',
+    title: 'Création de mon portfolio',
     speciality: null,
     content:
-      "Construction d'applications Création de ce portfolio pour présenter mes compétences et mes projets. Prêt à relever de nouveaux défis professionnels.",
+      'Création de ce portfolio pour présenter mes compétences et mes projets. Prêt à relever de nouveaux défis professionnels.',
   },
 ];
 
