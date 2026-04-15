@@ -90,7 +90,7 @@ const projectsData = [
     description: {
       short:
         'Application d’une plateforme de location avec React et React Router.',
-      full: 'Création du front-end d’une plateforme de location immobilière en React. Développement de composants réutilisables, gestion des routes avec React Router et intégration fidèle des maquettes Figma. Mise en place de fonctionnalités interactives (galerie, collapses) et exploitation de données JSON en l’absence de back-end.',
+      full: 'Dans le cadre d’une refonte complète du site de location immobilière existant, l’objectif était de moderniser l’application en développant un front-end entièrement en React. J’ai développé des composants réutilisables, mis en place la gestion des routes avec React Router et intégré fidèlement les maquettes Figma. J’ai également mis en place des fonctionnalités interactives (galerie, collapse) et exploité des données JSON en l’absence de back-end. Le résultat est une application front-end complète, responsive et fidèle aux maquettes, avec une navigation fluide entre les différentes pages. Parmi les pistes d’amélioration possibles figurent l’ajout d’un back-end réel via API, l’optimisation des performances ainsi que le renforcement de l’accessibilité.',
     },
 
     technologiesList: techlist1,
@@ -143,7 +143,7 @@ const projectsData = [
     description: {
       short:
         'Développement d’un site portfolio dynamique avec JavaScript, incluant gestion d’API, authentification et modale d’upload.',
-      full: 'Développement des fonctionnalités dynamiques du site portfolio d’une architecte d’intérieur. À partir d’une base HTML statique et d’un design Figma, intégration en JavaScript des interactions avec une API back-end fournie. Mise en place d’un système d’authentification administrateur, gestion dynamique des projets (affichage, filtrage, suppression) et création d’une modale permettant l’ajout de nouveaux médias.',
+      full: "Dans le cadre d’une mission pour l’agence ArchiWebos, j’ai participé au développement des fonctionnalités dynamiques du site portfolio d’une architecte d’intérieur. À partir d’une base HTML statique et des maquettes Figma, l’objectif était d’intégrer les interactions en JavaScript et de connecter l’application à une API back-end fournie. J’ai mis en place un système d’authentification administrateur, gestion dynamique des travaux (affichage, filtrage et suppression) ainsi qu’une modale d’upload permettant l’ajout de nouveaux médias. Ce projet m’a permis de renforcer mes compétences en manipulation d’API, gestion d’état côté front-end et création d’interfaces interactives. Parmi les pistes d’amélioration, on peut envisager l’ajout d’indicateurs de chargement et l’optimisation de l’expérience utilisateur sur les interactions avec la galerie d'images.",
     },
 
     technologiesList: techlist2,
@@ -196,7 +196,7 @@ const projectsData = [
     description: {
       short:
         'Développement d’une API sécurisée pour un site de notation de livres avec gestion des utilisateurs et des images. ',
-      full: 'Développement du back-end d’une application web de notation de livres en collaboration avec un développeur front-end. Conception et mise en place d’une API REST permettant la gestion des utilisateurs, des livres et des notations. Implémentation d’un système d’authentification sécurisé, gestion des routes protégées et traitement des requêtes HTTP. Intégration de l’upload et de l’optimisation des images côté serveur et respect des spécifications techniques fournies.',
+      full: 'Développement du back-end d’une application de notation de livres pour une chaîne de librairies. L’objectif était de concevoir une API REST complète permettant de gérer les utilisateurs, les livres et les notations. J’ai mis en place un système d’authentification sécurisé avec gestion des routes protégées, ainsi que le traitement des requêtes HTTP côté serveur. J’ai également implémenté la gestion de l’upload d’images avec optimisation afin de respecter des contraintes de performance. Ce projet m’a permis de renforcer mes compétences en conception d’API, sécurisation des échanges et manipulation de bases de données. Parmi les pistes d’amélioration, on peut envisager l’ajout de limite de notation, une meilleure gestion des erreurs côté API et l’ajout de nouvelles sections de recommandation, comme des livres du même auteur ou du même genre.',
     },
 
     technologiesList: techlist3,
@@ -226,7 +226,7 @@ const projectsData = [
     description: {
       short:
         'Intégration responsive d’une interface de réservation de logements et d’activités en HTML et CSS. ',
-      full: 'Intégration complète de la page d’accueil d’un site de réservation de voyages pour la start-up Booki. Développement en HTML et CSS à partir de maquettes Figma fournies pour desktop, tablette et mobile. Respect des contraintes techniques et de la structure existante, mise en place d’un design responsive et intégration fidèle des composants UI (cartes, filtres, sections d’hébergements et d’activités). Travail en collaboration avec une CTO et un UI designer, avec versioning du projet via GitHub.',
+      full: 'Dans le cadre de mon intégration en tant que développeur web chez la start-up Booki, j’ai été chargé d’intégrer la page d’accueil d’un site de réservation de voyages. À partir de maquettes Figma fournies pour desktop, tablette et mobile, l’objectif était de produire une interface fidèle et entièrement responsive en HTML et CSS. J’ai complété une base de code existante en respectant la structure imposée et les contraintes techniques. J’ai développé les différents composants de l’interface (cartes, filtres, sections d’hébergements et d’activités). Ce projet m’a permis de consolider mes bases en intégration web, en responsive design et en structuration du code. Parmi les pistes d’amélioration, on peut envisager l’ajout d’interactions dynamiques en JavaScript, l’amélioration de l’accessibilité et l’optimisation des performances.',
     },
 
     technologiesList: techlist4,
@@ -267,7 +267,7 @@ const projectsData = [
     description: {
       short:
         'Création d’un site vitrine autour d’un voyage à Tokyo avec galerie photo interactive.',
-      full: 'Développement d’un site vitrine personnel autour d’un voyage à Tokyo, mettant en avant une galerie de photos immersive. Intégration en HTML, CSS et JavaScript avec mise en place d’une navigation fluide et d’interactions légères pour améliorer l’expérience utilisateur. Travail sur le design visuel et la mise en valeur du contenu afin de créer une expérience engageante.',
+      full: 'Tokyo Vlog est un projet personnel visant à retranscrire l’expérience d’un voyage à Tokyo à travers une galerie photo immersive. L’objectif était de mettre en valeur des instants capturés sur le vif. Développé en HTML, CSS et JavaScript, le site propose une navigation fluide et des interactions dynamiques, incluant un slider en page d’accueil, une galerie filtrable par quartiers et une modale immersive permettant de parcourir les images. Ce projet m’a permis de travailler à la fois sur l’intégration front-end et sur le design visuel. Parmi les pistes d’amélioration, on peut envisager l’optimisation des performances via le lazy loading et la compression des images, ainsi que l’ajout d’animations et de contenus éditoriaux comme un journal de voyage.',
     },
 
     technologiesList: techlist5,
@@ -299,7 +299,7 @@ const projectsData = [
     description: {
       short:
         'Application interactive pour apprendre les kanjis avec système de score et partage des résultats.',
-      full: 'Développement d’une application web interactive permettant d’apprendre les kanjis de niveau N5. Implémentation d’un système de quiz demandant la lecture ou la traduction des caractères, avec gestion du score en temps réel. Ajout d’une fonctionnalité de partage des résultats et mise en place d’une logique dynamique en JavaScript pour gérer les réponses utilisateur et le suivi de progression.',
+      full: 'Benkyo est une application web interactive permettant d’apprendre les kanjis de niveau N5. Inspiré par mon intérêt pour la langue japonaise, ce projet avait pour objectif de proposer une expérience d’apprentissage simple et ludique. L’application repose sur un système de quiz dynamique où l’utilisateur doit retrouver la lecture ou la traduction des kanjis, avec un suivi du score en temps réel. J’ai implémenté différentes fonctionnalités telles que le mélange aléatoire des questions, la gestion des réponses avec feedback visuel, ainsi qu’une modale permettant de partager les résultats. Ce projet m’a permis de renforcer mes compétences en logique JavaScript. Parmi les pistes d’amélioration, on peut envisager l’ajout de niveaux supplémentaires (N4, N3), un système de révision des erreurs, des statistiques détaillées ainsi que l’intégration d’un mode audio.',
     },
 
     technologiesList: techlist6,
@@ -359,7 +359,7 @@ const projectsData = [
     description: {
       short:
         'Création d’un site vitrine avec galerie, storytelling et contact pour présenter une passion personnelle.',
-      full: 'Développement d’un site vitrine dédié à la présentation d’une passion pour les Gunpla en React. Conception d’une page d’accueil avec slider et galerie pour mettre en avant les créations, d’une page storytelling retraçant l’origine de cet intérêt, et d’une page de contact permettant d’échanger ou de rediriger vers les réseaux sociaux. Travail sur le système react, react router, la structuration du contenu et la mise en valeur visuelle.',
+      full: 'Jinu Workshop est un projet personnel développé en React visant à présenter ma passion pour les Gunpla. L’objectif était de concevoir une plateforme combinant galerie visuelle, storytelling et prise de contact. J’ai développé une architecture basée sur des composants réutilisables avec React et React Router pour gérer la navigation entre les différentes pages (accueil, story, contact). Le site met en avant mes créations et photographies via un slider et une galerie, tout en intégrant une dimension narrative pour retracer mon parcours dans ce hobby. Ce projet m’a permis de renforcer mes compétences en développement React. Parmi les pistes d’amélioration, on peut envisager l’ajout d’animations plus avancées, l’optimisation des performances ainsi que l’ajout de nouvelles sections comme un vlog ou un journal de création',
     },
 
     technologiesList: techlist7,
